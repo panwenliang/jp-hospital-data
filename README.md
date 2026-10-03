@@ -2,7 +2,9 @@
 
 Per-prefecture hospital / clinic / dental and pharmacy files for [jp-hospital-finder](https://github.com/panwenliang/jp-hospital-finder).
 
-Snapshot: **20260601**. Foreign-patient list date: **2026-08-06**.
+Snapshot: **20260601**. Foreign-patient list date: **2026-08-06**. Data version: **20260601-r2**.
+
+r2 (2026-10-03) re-encodes hours from the same source snapshot: days with only 外来受付時間 now fill `h` and each department's consultation slot (marked by the `hr` / `d[][3]` day bitmasks; 576 facilities gained hours, 842 gained days), and pharmacy slots ending at midnight are kept as `24:00` (15 pharmacies gained hours). No other field changed.
 
 ## Layout
 
