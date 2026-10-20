@@ -10,7 +10,7 @@
   <header class="banner">
     <p class="brand"><a href="index.html">Japan Clinic Finder</a></p>
     <h1>Privacy policy</h1>
-    <p class="lead">Last updated: 2026-10-01</p>
+    <p class="lead">Last updated: 2026-10-20</p>
   </header>
   <nav class="langs" aria-label="Language">
     <a href="#en">English</a>
@@ -31,10 +31,12 @@
       <p>Hospital and pharmacy files are downloaded from public CDNs (jsDelivr and, as fallback, raw.githubusercontent.com) that host the open data package. Those providers may see your IP address and standard request metadata when a download runs. The files are then cached on your phone for offline use.</p>
       <h3>Map tiles</h3>
       <p>Map tiles are requested from the Geospatial Information Authority of Japan (GSI). GSI may see your IP address when tiles load.</p>
-      <h3>Crash reporting</h3>
-      <p>Crash reporting SDKs (for example Sentry or Firebase Crashlytics) are <strong>not included</strong> in the current release. If they are added later, this policy will be updated before the change ships.</p>
-      <h3>Advertising (when ads are shown)</h3>
-      <p><em>This section applies when Google AdMob ads are enabled in a future build.</em> The app may show banner ads using Google AdMob. AdMob and its partners may collect the Android advertising ID and device/network signals to serve and measure ads, subject to Google’s advertising policies and your device ad settings. Ads will not appear on the emergency guidance screen. You can reset or opt out of personalized ads in Android settings.</p>
+      <h3>Crash diagnostics</h3>
+      <p>Release builds send crash diagnostics to <strong>Google Firebase Crashlytics</strong> (Firebase project <code>jp-hospital-finder</code>) so we can fix failures. A report can include the crash stack, app version and build number, device model, and Android version. Debug builds do not send these reports. We do not add your name, email, phone number, or location to crash reports. If Firebase cannot start, the app keeps running and sends nothing.</p>
+      <h3>Advertising</h3>
+      <p>The app shows banner ads with <strong>Google AdMob</strong> on the facility list and the About screen (settings). Ads are not shown on the map, the emergency / 119 screen, a facility’s detail page, or while you place a call or open directions. AdMob and its partners may collect the Android <strong>advertising ID</strong> and device or network signals to serve and measure ads, under Google’s advertising policies and your device ad settings.</p>
+      <p>In the EEA, the UK, and other regions where consent is required, the app asks with <strong>Google’s User Messaging Platform (UMP)</strong> before it requests ads. You can reopen those choices from About → Ad privacy options.</p>
+      <p>A one-time in-app purchase (product id <code>remove_ads</code>) hides banner ads on this device. Google Play processes the payment. We store only an “ads removed” flag on the device. Restore purchases is on the About screen.</p>
       <h3>Children</h3>
       <p>The app is intended for adults and caregivers seeking clinic information. It is not directed at children under 13.</p>
       <h3>Contact</h3>
@@ -55,10 +57,12 @@
       <p>医院与药店数据从公开 CDN（jsDelivr，备用 raw.githubusercontent.com）下载。下载时这些服务商可能看到您的 IP 等常规请求信息。下载后缓存在手机上供离线使用。</p>
       <h3>地图瓦片</h3>
       <p>地图瓦片来自日本国土地理院（GSI）。加载瓦片时 GSI 可能看到您的 IP。</p>
-      <h3>崩溃报告</h3>
-      <p>当前版本<strong>未集成</strong>崩溃报告 SDK。若日后加入，将先更新本政策。</p>
-      <h3>广告（展示广告时适用）</h3>
-      <p><em>本节适用于日后启用 Google AdMob 广告的版本。</em>应用可能通过 AdMob 展示横幅广告。AdMob 及其合作伙伴可能收集广告 ID 与设备/网络信息用于投放与衡量广告，并受 Google 广告政策及系统广告设置约束。急救说明页不展示广告。您可在 Android 设置中重置或退出个性化广告。</p>
+      <h3>崩溃诊断</h3>
+      <p>正式版会把崩溃诊断发送到 <strong>Google Firebase Crashlytics</strong>（Firebase 项目 <code>jp-hospital-finder</code>），以便我们修复故障。报告可能包含崩溃堆栈、应用版本与构建号、设备型号和 Android 版本。调试版不发送这些报告。我们不会把您的姓名、邮箱、电话或位置写入崩溃报告。若 Firebase 无法启动，应用仍可使用，且不会发送报告。</p>
+      <h3>广告</h3>
+      <p>应用通过 <strong>Google AdMob</strong> 在医疗机构列表和“关于”（设置）页展示横幅广告。地图、急救 / 119、机构详情，以及拨号或导航过程中不展示广告。AdMob 及其合作伙伴可能收集 Android <strong>广告 ID</strong> 以及设备或网络信息，用于投放和衡量广告，并受 Google 广告政策及系统广告设置约束。</p>
+      <p>在欧盟、英国及其他需要同意的地区，应用会在请求广告前通过 <strong>Google 用户消息平台（UMP）</strong> 征求同意。您可以在“关于 → 广告隐私选项”中再次打开这些选项。</p>
+      <p>一次性应用内购买（商品 ID <code>remove_ads</code>）可在本机关闭横幅广告。付款由 Google Play 处理。我们只在设备上保存“已移除广告”标记。“关于”页可以恢复购买。</p>
       <h3>儿童</h3>
       <p>本应用面向需要查找医疗机构信息的成人及照护者，不以 13 岁以下儿童为目标用户。</p>
       <h3>联系方式</h3>
@@ -79,10 +83,12 @@
       <p>病院・薬局データは公開 CDN（jsDelivr、予備として raw.githubusercontent.com）から取得します。ダウンロード時、これらの提供者は IP アドレス等の通常の通信情報を取得し得ます。取得後は端末にキャッシュし、オフラインで利用できます。</p>
       <h3>地図タイル</h3>
       <p>地図タイルは国土地理院（GSI）から取得します。タイル取得時に GSI が IP アドレスを取得する場合があります。</p>
-      <h3>クラッシュ報告</h3>
-      <p>現在のリリースにはクラッシュ報告 SDK を<strong>含みません</strong>。将来追加する場合は、公開前に本ポリシーを更新します。</p>
-      <h3>広告（広告表示時に適用）</h3>
-      <p><em>本節は、将来 Google AdMob 広告を有効にしたビルドに適用されます。</em>バナー広告を表示する場合、AdMob およびそのパートナーが広告 ID や端末・ネットワーク情報を取得し、広告配信・効果測定に用いることがあります（Google の広告ポリシーおよび端末の広告設定に従います）。救急案内画面には広告を出しません。Android の設定でパーソナライズド広告のリセットやオプトアウトが可能です。</p>
+      <h3>クラッシュ診断</h3>
+      <p>リリース版は、不具合の修正のためクラッシュ診断を <strong>Google Firebase Crashlytics</strong>（Firebase プロジェクト <code>jp-hospital-finder</code>）へ送信します。報告にはクラッシュ時のスタック、アプリのバージョンとビルド番号、端末モデル、Android のバージョンが含まれることがあります。デバッグ版では送信しません。氏名・メール・電話番号・位置情報はクラッシュ報告に含めません。Firebase を開始できない場合、アプリはそのまま動作し、報告は送りません。</p>
+      <h3>広告</h3>
+      <p>施設一覧と「このアプリ」（設定）画面に、<strong>Google AdMob</strong> のバナー広告を表示します。地図、救急 / 119、施設の詳細、電話発信、経路案内には広告を出しません。AdMob およびそのパートナーは、広告配信と効果測定のため Android の<strong>広告 ID</strong> や端末・ネットワーク情報を取得することがあります（Google の広告ポリシーおよび端末の広告設定に従います）。</p>
+      <p>EEA・英国など同意が必要な地域では、広告をリクエストする前に <strong>Google のユーザーメッセージプラットフォーム（UMP）</strong> で同意を求めます。「このアプリ → 広告のプライバシー設定」から再度開けます。</p>
+      <p>一回限りのアプリ内購入（商品 ID <code>remove_ads</code>）で、この端末のバナー広告を非表示にできます。支払いは Google Play が処理します。端末には「広告を非表示にした」印だけを保存します。購入の復元は「このアプリ」画面にあります。</p>
       <h3>お子さま</h3>
       <p>本アプリは医療機関情報を探す成人・保護者向けであり、13 歳未満の子どもを対象としていません。</p>
       <h3>お問い合わせ</h3>
