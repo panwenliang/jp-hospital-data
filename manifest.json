@@ -1,13 +1,13 @@
 {
-  "version": "20260601-r2",
+  "version": "20260601-r3",
   "snapshot": "20260601",
-  "generated": "2026-10-03T14:37:12+09:00",
-  "facilities_count": 142751,
+  "generated": "2026-10-21T08:31:47+00:00",
+  "facilities_count": 142753,
   "credit": "出典：厚生労働省「外国人患者を受け入れる医療機関の情報を取りまとめたリスト」、厚生労働省「医療情報ネット（ナビイ）」オープンデータ（公共データ利用規約 第1.0版 PDL1.0）を加工して作成。位置の一部は国土地理院の住所検索APIによる。",
   "meta": {
     "path": "facilities/meta.json.gz",
-    "bytes": 23049,
-    "sha256": "3e4cc0b315635ce0ecbebffd1d58b5ac2399691fd9b0f3e57d4a61e491e295cd"
+    "bytes": 23044,
+    "sha256": "9a84d082e0f9352c1d528b7f22786be88e60110004efb8231051cb24d092bf7f"
   },
   "prefectures": [
     {
@@ -15,9 +15,9 @@
       "name": "北海道",
       "facilities": {
         "path": "facilities/01.json.gz",
-        "bytes": 464951,
-        "sha256": "148f544163ec13495828949a2e0d5c9d0ec12da40b221b4f25dd700be532f991",
-        "count": 4731
+        "bytes": 465698,
+        "sha256": "60b15f143d33b6d15505ad9fca2f9b3fd26e240d5f0a376c264a53dd48d55e6f",
+        "count": 4732
       },
       "pharmacies": {
         "path": "pharmacies/01.json.gz",
@@ -32,7 +32,7 @@
       "facilities": {
         "path": "facilities/02.json.gz",
         "bytes": 99716,
-        "sha256": "d5b6022ab940402498a6201d0186fefdcfeec1154054592498d7ae2adec20b1a",
+        "sha256": "da44cc0cff0afd1b1d789394d0fa59f9bd9b0440d0e7605cf86eea6292d355d4",
         "count": 986
       },
       "pharmacies": {
@@ -95,8 +95,8 @@
       "name": "山形県",
       "facilities": {
         "path": "facilities/06.json.gz",
-        "bytes": 122132,
-        "sha256": "56ea2f9430d1634496c1aa2e18dc8af1532563457a54c1e154e873dcb1bb884f",
+        "bytes": 122133,
+        "sha256": "466d336a21afde666e9050b1265b8ae2a1091395532d197a1e48e3f4aa4a27f4",
         "count": 1168
       },
       "pharmacies": {
@@ -111,8 +111,8 @@
       "name": "福島県",
       "facilities": {
         "path": "facilities/07.json.gz",
-        "bytes": 178909,
-        "sha256": "528e0bc7f53dd66858205dde3195f275c61548e9edb1711486ce58dabf85950c",
+        "bytes": 178914,
+        "sha256": "3fbaa18b9ef0756a8654725a7f151e2420cf256561cc751c56ab3460c877a1b1",
         "count": 1776
       },
       "pharmacies": {
@@ -127,8 +127,8 @@
       "name": "茨城県",
       "facilities": {
         "path": "facilities/08.json.gz",
-        "bytes": 270367,
-        "sha256": "336f19364a45563a43fd568de4746f0e9c3e0386ce85b26e3a91124f8225e14e",
+        "bytes": 270392,
+        "sha256": "33cc6def8b7195eef5cb34900801490b2073aa594a37664f75a2a591178b8d23",
         "count": 2458
       },
       "pharmacies": {
@@ -143,8 +143,8 @@
       "name": "栃木県",
       "facilities": {
         "path": "facilities/09.json.gz",
-        "bytes": 201006,
-        "sha256": "f95c2486d75cac4027789103e1f4329b5d58c22010ba161b5d0d2227753d5ca9",
+        "bytes": 201025,
+        "sha256": "f4f0d97c2773b2785b8554b91cc28e1eae4cce4023d0ea115fc2f982af0de8ce",
         "count": 2194
       },
       "pharmacies": {
@@ -159,8 +159,8 @@
       "name": "群馬県",
       "facilities": {
         "path": "facilities/10.json.gz",
-        "bytes": 222568,
-        "sha256": "840d4ac50806badd259890fb0e6cb35e19a52b7bc05cb382d63c53661dce5974",
+        "bytes": 222566,
+        "sha256": "c775fae781240bfd8bc517658d8b2a56d8e7afa360c7c35a10a8363d2dac1b14",
         "count": 2291
       },
       "pharmacies": {
@@ -175,8 +175,8 @@
       "name": "埼玉県",
       "facilities": {
         "path": "facilities/11.json.gz",
-        "bytes": 708117,
-        "sha256": "3e51f7053595d76b9c61caf6c59f301dbb292a1b6d0fac063f3df837bceb2b5a",
+        "bytes": 708127,
+        "sha256": "32d61ec4265f868460e3b780964dd554644fef6c055e0d24484efdb2b8620beb",
         "count": 6716
       },
       "pharmacies": {
@@ -191,8 +191,8 @@
       "name": "千葉県",
       "facilities": {
         "path": "facilities/12.json.gz",
-        "bytes": 605187,
-        "sha256": "5f27c207020c58e308cb5f4b666e64f3f4f6dad0caabd7a8f5c6e234cd62a369",
+        "bytes": 605193,
+        "sha256": "66e66c7dea00cd29f196ed3dc96b031843c1bf4ae17f7fcc272f1aae7c234ae0",
         "count": 5529
       },
       "pharmacies": {
@@ -207,8 +207,8 @@
       "name": "東京都",
       "facilities": {
         "path": "facilities/13.json.gz",
-        "bytes": 2426639,
-        "sha256": "fe609e292bd83db4af6a188851aa7fca455d7b8099460f3ee883ce7bf9ac31a2",
+        "bytes": 2426664,
+        "sha256": "b332c0ac94baaeeaf83918e4c2b12c894a481150e08324296c8e56b92ed5ff72",
         "count": 21769
       },
       "pharmacies": {
@@ -223,8 +223,8 @@
       "name": "神奈川県",
       "facilities": {
         "path": "facilities/14.json.gz",
-        "bytes": 1033154,
-        "sha256": "3743b4f928e7228fc4f4ee3c4cbf8126e08ac1f3a8edb8be8c95fa06c3fc3582",
+        "bytes": 1033164,
+        "sha256": "a92464e035f99c42e70cb8163eca5f8aecffab49b463a760791bfe0a22215840",
         "count": 9744
       },
       "pharmacies": {
@@ -239,8 +239,8 @@
       "name": "新潟県",
       "facilities": {
         "path": "facilities/15.json.gz",
-        "bytes": 193163,
-        "sha256": "4c0d1168d7aa0ee300f5786fa4a34c24bcfb8e9a84c468e9071bb5fd77708c78",
+        "bytes": 193175,
+        "sha256": "20c4524a046ada864376ec658e5b637f58b78b06899f1ade0a1aec8c0572116c",
         "count": 2154
       },
       "pharmacies": {
@@ -255,8 +255,8 @@
       "name": "富山県",
       "facilities": {
         "path": "facilities/16.json.gz",
-        "bytes": 114036,
-        "sha256": "9422e885ba3076b37274d2693855efeba8af1e849b71d484ac5e4084359c1700",
+        "bytes": 114039,
+        "sha256": "73f6b97caab6ec717dea875a2211b5f6b2450c96d956757e0533f3a2f622c718",
         "count": 1055
       },
       "pharmacies": {
@@ -271,8 +271,8 @@
       "name": "石川県",
       "facilities": {
         "path": "facilities/17.json.gz",
-        "bytes": 97511,
-        "sha256": "8e78dd3f826970bdc9f70a1471e5ed145d8dd86f5939664e99f697f47eec5f9f",
+        "bytes": 97520,
+        "sha256": "3526924a2f8cd57d91613fa7c8ac822d65cce550c8b499ea0d9019d829c8b1b4",
         "count": 891
       },
       "pharmacies": {
@@ -287,8 +287,8 @@
       "name": "福井県",
       "facilities": {
         "path": "facilities/18.json.gz",
-        "bytes": 83012,
-        "sha256": "e849f3c0c86b8f1608f8532b0f13c70aebe694b6af7116e873bf9e0a2bb5b1cd",
+        "bytes": 83015,
+        "sha256": "5a761750cf4721f0c599c2c25b0aa4f2561f0710c68ba1cc6c73827746b9c203",
         "count": 773
       },
       "pharmacies": {
@@ -303,8 +303,8 @@
       "name": "山梨県",
       "facilities": {
         "path": "facilities/19.json.gz",
-        "bytes": 103934,
-        "sha256": "0c887adfdb90c73029a349442ed586a6399713bc9ad03d68ad37ecde4489daf4",
+        "bytes": 104143,
+        "sha256": "c10929384fd09645004082cb813103dbcc6381a6688bf69933c6170ef65d08e6",
         "count": 1022
       },
       "pharmacies": {
@@ -319,8 +319,8 @@
       "name": "長野県",
       "facilities": {
         "path": "facilities/20.json.gz",
-        "bytes": 203778,
-        "sha256": "ac06448ffbb027e11859b277ac1543993433c74a72f80ca6ef44309ae4f56ae4",
+        "bytes": 203784,
+        "sha256": "bc3017bb7b8bb75e5c4c022608c802e6b7e6e547313d50cf03032b42b4a00707",
         "count": 2198
       },
       "pharmacies": {
@@ -335,8 +335,8 @@
       "name": "岐阜県",
       "facilities": {
         "path": "facilities/21.json.gz",
-        "bytes": 216798,
-        "sha256": "baa09f05365870dc3d377cd3b93f13ad6a14ce71a31cd18df9c7bd2bd9831a04",
+        "bytes": 216804,
+        "sha256": "18654747aee05ecc2a827823f69cfe0512c790e09c3e4308ed9644b763d3b103",
         "count": 2287
       },
       "pharmacies": {
@@ -351,8 +351,8 @@
       "name": "静岡県",
       "facilities": {
         "path": "facilities/22.json.gz",
-        "bytes": 379819,
-        "sha256": "c8e27577bc19809cdcba7ee0fb194897587b51b146d3c99e2da7e0fe96332572",
+        "bytes": 379827,
+        "sha256": "b02bf173036401495c941e1ac81f7d4f2149804e8c9d5486f75711f9dec714f2",
         "count": 3974
       },
       "pharmacies": {
@@ -367,8 +367,8 @@
       "name": "愛知県",
       "facilities": {
         "path": "facilities/23.json.gz",
-        "bytes": 818849,
-        "sha256": "733baaa2ad666864175597cbe55bdef7ef3a99c57eb3019accfb6a7f5684d581",
+        "bytes": 818855,
+        "sha256": "0e2a7a491aafe41db288dedc28b13e01997975d84b6ac5bb670636984e987c01",
         "count": 7863
       },
       "pharmacies": {
@@ -383,8 +383,8 @@
       "name": "三重県",
       "facilities": {
         "path": "facilities/24.json.gz",
-        "bytes": 205454,
-        "sha256": "40547726d127cae6c1c3d4fea2e6ec78d39f71abe5263afc1381dc6994242309",
+        "bytes": 205461,
+        "sha256": "4e15f2a8418222df8dc637e0c2d6f4e487add93733e2e26ac5dbbbaa83720344",
         "count": 2017
       },
       "pharmacies": {
@@ -415,9 +415,9 @@
       "name": "京都府",
       "facilities": {
         "path": "facilities/26.json.gz",
-        "bytes": 178291,
-        "sha256": "bc5b3feccbd9611477c28ef43b68dae0143f0914767b2de5dd0a3e66193132de",
-        "count": 1650
+        "bytes": 178869,
+        "sha256": "6811b94d62dc4550e6ceaa7cfeba25b0fa84efce0593a021da7bc1808c438c55",
+        "count": 1651
       },
       "pharmacies": {
         "path": "pharmacies/26.json.gz",
@@ -431,8 +431,8 @@
       "name": "大阪府",
       "facilities": {
         "path": "facilities/27.json.gz",
-        "bytes": 1319938,
-        "sha256": "3c06b88588b73ecd88db88e918677efce92b720615921a5f963ee2a1914bbbd5",
+        "bytes": 1320016,
+        "sha256": "d9a38568931e1c4a1552dea375d1c49eb6f82bd177df18bebd33b15f639b1d23",
         "count": 12645
       },
       "pharmacies": {
@@ -447,8 +447,8 @@
       "name": "兵庫県",
       "facilities": {
         "path": "facilities/28.json.gz",
-        "bytes": 523912,
-        "sha256": "9bfb003e667eeb9f7ce3cd9f27e21a766627abed2f36a70daa687e931f4bb2aa",
+        "bytes": 523937,
+        "sha256": "06f58203142dc0992e4455bcb8fb24908e0bf67de1e3de68afbe02a8960ee75a",
         "count": 5423
       },
       "pharmacies": {
@@ -463,8 +463,8 @@
       "name": "奈良県",
       "facilities": {
         "path": "facilities/29.json.gz",
-        "bytes": 157730,
-        "sha256": "e6c9bc708ef2b00c2fa8453be7fd0735cc1d04b52651c868657503cf6ac09097",
+        "bytes": 157735,
+        "sha256": "fd2a48e1c6797cbc457331ed7e7fbbec7b2e242357671d79f096ba3072d0f464",
         "count": 1502
       },
       "pharmacies": {
@@ -495,8 +495,8 @@
       "name": "鳥取県",
       "facilities": {
         "path": "facilities/31.json.gz",
-        "bytes": 56083,
-        "sha256": "b774120f642c1eb0612d1d2c28a09b3c39cb3fb626c464504a514b391eeb6e18",
+        "bytes": 56114,
+        "sha256": "cb3ebeb4abaf61de7615a1df3080ef5ec0a7d798618c47b94a6c397bd5e26a0c",
         "count": 613
       },
       "pharmacies": {
@@ -511,8 +511,8 @@
       "name": "島根県",
       "facilities": {
         "path": "facilities/32.json.gz",
-        "bytes": 85625,
-        "sha256": "8d35cb24e57b8e7c7facea0b265b81d69d0016510361e8097891b9691a240d15",
+        "bytes": 85661,
+        "sha256": "513cf779d6ed5d939986a54c37d15444fa88d1be51478a29e9aaaedebb88d3ab",
         "count": 884
       },
       "pharmacies": {
@@ -527,8 +527,8 @@
       "name": "岡山県",
       "facilities": {
         "path": "facilities/33.json.gz",
-        "bytes": 233875,
-        "sha256": "b8afc7332b124212de5c68f8f36e0e24ffefbe3118031c8433f47b0e667b1010",
+        "bytes": 233883,
+        "sha256": "9f9f803224f3e15014012701c55a1a300903d4b656f208b2246b8ffe6c751fc0",
         "count": 2266
       },
       "pharmacies": {
@@ -543,8 +543,8 @@
       "name": "広島県",
       "facilities": {
         "path": "facilities/34.json.gz",
-        "bytes": 339819,
-        "sha256": "c02fb278fab6ec31e638f15e2fa706664a0d1ea81f10e15b2a3bcc4068cca2b7",
+        "bytes": 340219,
+        "sha256": "d8b4d955775fd0e815ddc19a934352651382efc78328dc71263443fcca297ab0",
         "count": 3464
       },
       "pharmacies": {
@@ -559,8 +559,8 @@
       "name": "山口県",
       "facilities": {
         "path": "facilities/35.json.gz",
-        "bytes": 157603,
-        "sha256": "d7a4219f43553d3431df8f3e5a93f02cd31b53d61063bf13461b7e099b1ece25",
+        "bytes": 157608,
+        "sha256": "0dcbd3de7b72fc187f4ec7c45b290bc009aa23d8df0dba4f42161a4ec1f9bd86",
         "count": 1622
       },
       "pharmacies": {
@@ -575,8 +575,8 @@
       "name": "徳島県",
       "facilities": {
         "path": "facilities/36.json.gz",
-        "bytes": 104691,
-        "sha256": "015168ce6ff964b09e89134e0729e2961d12470e3dd093466699c754c69f9fbc",
+        "bytes": 104698,
+        "sha256": "690e37c17bab11687fd8b7c226faf1fbef484a844ca7ab5b84fd08680618ba88",
         "count": 1029
       },
       "pharmacies": {
@@ -591,8 +591,8 @@
       "name": "香川県",
       "facilities": {
         "path": "facilities/37.json.gz",
-        "bytes": 129847,
-        "sha256": "5aa877436bf702af5c98146d4689884ca1fc4e949ad39a84ecbbfb3e7641691c",
+        "bytes": 129851,
+        "sha256": "18d3e6ba6a2f8aaaa3ce355023b86ad99a57b14fa99264553eb3fa5d717c03f1",
         "count": 1176
       },
       "pharmacies": {
@@ -607,8 +607,8 @@
       "name": "愛媛県",
       "facilities": {
         "path": "facilities/38.json.gz",
-        "bytes": 161020,
-        "sha256": "7b8b291e5482ebc38fd06903ef7696a0deefa0cb9b3a2d473f1657e259ba0f18",
+        "bytes": 161024,
+        "sha256": "a6390129c4fca240a4e7348d381eba2515abf6bb5474f90c5dd8d91c759383e4",
         "count": 1643
       },
       "pharmacies": {
@@ -623,8 +623,8 @@
       "name": "高知県",
       "facilities": {
         "path": "facilities/39.json.gz",
-        "bytes": 89164,
-        "sha256": "ff95e09263f26c10fb9aa375cae82d926490ca2aac3cb5dae1fefeafc033fbec",
+        "bytes": 89171,
+        "sha256": "527de0e751cc7f0d41b1d1db881f9d34896d41c9bb114a2a9ab02571e76ac010",
         "count": 839
       },
       "pharmacies": {
@@ -639,8 +639,8 @@
       "name": "福岡県",
       "facilities": {
         "path": "facilities/40.json.gz",
-        "bytes": 733968,
-        "sha256": "14c6597df48078464aed04d6466631609ccac258b44c27441188161278bceabf",
+        "bytes": 733977,
+        "sha256": "ac8eda9eb4c2246cf6d3652f627cab787ddab7debcec0fa20a6f433aaf3f0166",
         "count": 7494
       },
       "pharmacies": {
@@ -687,8 +687,8 @@
       "name": "熊本県",
       "facilities": {
         "path": "facilities/43.json.gz",
-        "bytes": 209903,
-        "sha256": "b9f9c553ee5e5aaa9ebca6afda58aec91181a1aa509313a4062724483f0066ba",
+        "bytes": 209905,
+        "sha256": "3001449f67c305f601441970a3e8409345856f4c264f3505d30a4ecaca66f4d1",
         "count": 2200
       },
       "pharmacies": {
@@ -719,8 +719,8 @@
       "name": "宮崎県",
       "facilities": {
         "path": "facilities/45.json.gz",
-        "bytes": 118668,
-        "sha256": "fd2efa23f5eb2d0606cf5c97d2381ceb783865de5e91da02925a56ab47b24dcf",
+        "bytes": 118671,
+        "sha256": "df6ffba89d8524e1948fef60914f1355eecb39e96c62a98a873575fa7074fb38",
         "count": 1193
       },
       "pharmacies": {
@@ -735,8 +735,8 @@
       "name": "鹿児島県",
       "facilities": {
         "path": "facilities/46.json.gz",
-        "bytes": 146466,
-        "sha256": "0da163c7db88dde9fb1de8a4a9d2fbf8b3874d05ae043abd3c0e6658be24fcfb",
+        "bytes": 146492,
+        "sha256": "6913bb084881ee5db4acc44030451bd4b025df13fa038ef7f66b9aaac6eb3351",
         "count": 1317
       },
       "pharmacies": {
@@ -751,8 +751,8 @@
       "name": "沖縄県",
       "facilities": {
         "path": "facilities/47.json.gz",
-        "bytes": 53862,
-        "sha256": "5e9188bb9ad2162587781866ee58e805e41a767cfca3f79ff6a43f5f27884c06",
+        "bytes": 53886,
+        "sha256": "25c33f39686d68108869d9f8aa2f4d65f2db043c88edd25fbfe8df7ecfd4dfc0",
         "count": 444
       },
       "pharmacies": {
