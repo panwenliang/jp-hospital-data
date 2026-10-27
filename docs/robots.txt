@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://panwenliang.github.io/jp-hospital-data/sitemap.xml
