@@ -188,17 +188,52 @@ h1 {
 
 .phone { margin: 12px 0 0; }
 
+.phone picture { display: block; }
+
 .phone img {
-  width: min(210px, 70vw);
+  width: min(220px, 68vw);
+  height: auto;
   display: block;
   margin-inline: auto;
+  border-radius: 22px;
+  box-shadow: 0 16px 36px rgba(16, 36, 33, 0.16);
 }
 
-.phone figcaption {
-  margin: 8px 0 0;
-  text-align: center;
+.shots { margin-top: 8px; }
+
+.shot-row {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  padding: 2px 2px 12px;
+  margin: 0;
+  scrollbar-color: var(--line) transparent;
+}
+
+.shot-row figure {
+  flex: 0 0 min(168px, 62vw);
+  margin: 0;
+  scroll-snap-align: start;
+}
+
+.shot-row picture { display: block; }
+
+.shot-row img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 18px;
+  background: #14312c;
+  box-shadow: 0 8px 24px rgba(16, 36, 33, 0.12);
+}
+
+.shot-row figcaption {
+  margin: 8px 2px 0;
   color: var(--muted);
-  font-size: 0.8rem;
+  font-size: 0.84rem;
+  line-height: 1.45;
 }
 
 .section-title {
@@ -313,14 +348,15 @@ h1 {
 
 @media (min-width: 880px) {
   .hero {
-    grid-template-columns: minmax(0, 1fr) 230px;
+    grid-template-columns: minmax(0, 1fr) 250px;
     column-gap: 40px;
     align-items: center;
     padding-top: 48px;
   }
 
   .phone { margin: 0; }
-  .phone img { width: 220px; }
+  .phone img { width: 230px; }
+  .shot-row figure { flex-basis: 200px; }
 
   .notes { grid-template-columns: 1.45fr 0.9fr; align-items: stretch; }
 }
@@ -331,4 +367,5 @@ h1 {
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
+  .shot-row { scroll-snap-type: none; }
 }
