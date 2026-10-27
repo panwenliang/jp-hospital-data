@@ -1,56 +1,344 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Japan Clinic Finder / 日本就医助手 / 外国語対応病院マップ</title>
-  <link rel="stylesheet" href="site.css">
+  <title>今開いてる病院マップ｜夜間・休日・薬局・多言語</title>
+  <meta name="description" content="今開いてる病院・薬局を地図で検索。夜間・休日・日曜も近くの施設をすぐ確認。外国語対応で絞り込み、名称・住所の候補検索、都道府県データのオフライン保存に対応。データは厚生労働省の公開情報です。緊急時は119番。">
+  <meta name="author" content="Little Star Studio">
+  <meta name="theme-color" content="#eef3f1">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://panwenliang.github.io/jp-hospital-data/">
+  <link rel="alternate" hreflang="ja" href="https://panwenliang.github.io/jp-hospital-data/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://panwenliang.github.io/jp-hospital-data/#zh">
+  <link rel="alternate" hreflang="en" href="https://panwenliang.github.io/jp-hospital-data/#en">
+  <link rel="alternate" hreflang="x-default" href="https://panwenliang.github.io/jp-hospital-data/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:locale:alternate" content="zh_CN">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:site_name" content="今開いてる病院マップ">
+  <meta property="og:title" content="今開いてる病院マップ｜夜間・休日・薬局・多言語">
+  <meta property="og:description" content="今開いてる病院・薬局を地図で検索。夜間・休日・日曜も近くの施設をすぐ確認。外国語対応で絞り込み、名称・住所の候補検索、都道府県データのオフライン保存に対応。データは厚生労働省の公開情報です。緊急時は119番。">
+  <meta property="og:url" content="https://panwenliang.github.io/jp-hospital-data/">
+  <meta property="og:image" content="https://panwenliang.github.io/jp-hospital-data/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="今開いてる病院マップ｜夜間・休日・薬局・多言語">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="今開いてる病院マップ｜夜間・休日・薬局・多言語">
+  <meta name="twitter:description" content="今開いてる病院・薬局を地図で検索。夜間・休日・日曜も近くの施設をすぐ確認。外国語対応で絞り込み。緊急時は119番。">
+  <meta name="twitter:image" content="https://panwenliang.github.io/jp-hospital-data/assets/og.png">
+  <meta name="twitter:image:alt" content="今開いてる病院マップ｜夜間・休日・薬局・多言語">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="landing.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "今開いてる病院マップ｜夜間・休日・薬局・多言語",
+    "description": "今開いてる病院・薬局を地図で検索。夜間・休日・日曜も近くの施設をすぐ確認。外国語対応で絞り込み、名称・住所の候補検索、都道府県データのオフライン保存に対応。",
+    "url": "https://panwenliang.github.io/jp-hospital-data/",
+    "image": "https://panwenliang.github.io/jp-hospital-data/assets/og.png",
+    "installUrl": "https://play.google.com/store/apps/details?id=com.panwenliang.jphospitalfinder",
+    "downloadUrl": "https://play.google.com/store/apps/details?id=com.panwenliang.jphospitalfinder",
+    "operatingSystem": "ANDROID",
+    "applicationCategory": "HealthApplication",
+    "identifier": "com.panwenliang.jphospitalfinder",
+    "inLanguage": ["ja", "zh-Hans", "en"],
+    "countriesSupported": "JP",
+    "isAccessibleForFree": true,
+    "featureList": [
+      "いま開いている地図",
+      "夜間・休日・日曜",
+      "薬局",
+      "外国語対応の絞り込み",
+      "施設名・住所検索（候補表示）",
+      "都道府県データのオフライン保存"
+    ],
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "JPY",
+      "availability": "https://schema.org/InStock"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "Little Star Studio",
+      "url": "https://panwenliang.github.io/jp-hospital-data/",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "jpclinicfinder@gmail.com",
+        "contactType": "customer support",
+        "availableLanguage": ["Japanese", "Chinese", "English"]
+      }
+    }
+  }
+  </script>
 </head>
 <body>
-  <header class="banner">
-    <p class="brand">Japan Clinic Finder</p>
-    <h1>日本就医助手 · 外国語対応病院マップ</h1>
-    <p class="lead">Find hospitals and clinics in Japan. Chinese, Japanese, and English.</p>
+  <a class="skip" href="#main">本文へスキップ</a>
+  <header class="bar">
+    <div class="bar-inner">
+      <a class="brand" href="#ja">今開いてる病院マップ</a>
+      <nav class="langs" aria-label="Language">
+        <a href="#ja" hreflang="ja" lang="ja">日本語</a>
+        <a href="#zh" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+        <a href="#en" hreflang="en" lang="en">English</a>
+      </nav>
+    </div>
   </header>
+  <main id="main">
+    <article id="ja" lang="ja" class="locale">
+      <div class="wrap">
+        <div class="hero">
+          <div class="copy">
+            <p class="eyebrow">Android アプリ</p>
+            <h1 translate="no">今開いてる病院マップ｜夜間・休日・薬局・多言語</h1>
+            <p class="tagline">今開いてる病院・薬局を地図で検索。夜間・休日・日曜も近くの施設をすぐ確認。外国語対応で絞り込み</p>
+            <div class="stores">
+              <a class="badge-link" href="https://play.google.com/store/apps/details?id=com.panwenliang.jphospitalfinder">
+                <img src="assets/google-play-badge-ja.png" width="646" height="250" alt="Google Play で手に入れよう" decoding="async">
+              </a>
+              <p class="soon">App Store：近日公開</p>
+            </div>
+          </div>
+          <figure class="phone">
+            <img src="assets/map-illustration.svg" width="260" height="480" alt="地図上にピンが並ぶアプリ画面のイメージ" decoding="async">
+            <figcaption>図はイメージです。実際の画面とは異なります。</figcaption>
+          </figure>
+        </div>
 
-  <nav class="langs" aria-label="Language">
-    <a href="#en">English</a>
-    <a href="#zh">简体中文</a>
-    <a href="#ja">日本語</a>
-  </nav>
+        <h2 class="section-title" id="feat-ja">できること</h2>
+        <ul class="features">
+          <li>
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10" r="2.2" fill="currentColor"/></svg></div>
+            <h3>いま開いている地図</h3>
+            <p>病院・薬局のうち、いま開いている施設を地図で探せます。</p>
+          </li>
+          <li>
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M15.5 3.8a7.2 7.2 0 1 0 5 12.2A6.6 6.6 0 0 1 15.5 3.8z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
+            <h3>夜間・休日・日曜</h3>
+            <p>夜や、休日・日曜も、近くの施設を確認できます。</p>
+          </li>
+          <li>
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M4 10.2 12 4l8 6.2V20a1 1 0 0 1-1 1h-4.2v-6H9.2V21H5a1 1 0 0 1-1-1v-9.8z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
+            <h3>薬局</h3>
+            <p>近くの薬局が開いているかを、地図で見られます。</p>
+          </li>
+          <li>
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="12" r="8.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3.8 12h16.4M12 3.8c2.2 2.4 3.4 5.2 3.4 8.2s-1.2 5.8-3.4 8.2c-2.2-2.4-3.4-5.2-3.4-8.2s1.2-5.8 3.4-8.2z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></div>
+            <h3>外国語対応</h3>
+            <p>外国語対応の施設に絞り込めます。</p>
+          </li>
+          <li>
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><circle cx="11" cy="11" r="6.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M15.8 15.8 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <h3>名称・住所検索</h3>
+            <p>施設名や住所を入力すると、候補が表示されます。</p>
+          </li>
+          <li>
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><rect x="7" y="3" width="10" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M9.4 12.2 11.2 14l3.6-3.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h3>オフライン</h3>
+            <p>都道府県のデータを端末に保存して、通信がなくても検索できます。</p>
+          </li>
+        </ul>
 
-  <main>
-    <section id="en">
-      <h2>English</h2>
-      <p>Japan Clinic Finder helps residents and visitors look up hospitals, clinics, dental clinics, and pharmacies in Japan, including places listed for foreign patients.</p>
-      <ul>
-        <li><a href="privacy.html#en">Privacy policy</a></li>
-        <li><a href="terms.html#en">Terms &amp; medical disclaimer</a></li>
-      </ul>
-    </section>
+        <div class="notes">
+          <section class="card" aria-labelledby="data-ja">
+            <h2 id="data-ja">データについて</h2>
+            <p>施設情報は、厚生労働省が公開しているオープンデータを加工したものです。実際の状況と異なる場合があります。訪問する前に、電話で施設にご確認ください。</p>
+            <p>本アプリは、厚生労働省が作成・提供するものではありません。</p>
+            <p class="credit muted">出典：厚生労働省「外国人患者を受け入れる医療機関の情報を取りまとめたリスト」、厚生労働省「<a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryou/newpage_43373.html">医療情報ネット（ナビイ）</a>」オープンデータ（<a href="https://www.digital.go.jp/resources/open_data/public_data_license_v1.0">公共データ利用規約（第1.0版）</a>）を加工して作成。一部の位置情報は国土地理院の住所検索を利用しています。</p>
+          </section>
+          <section class="card emergency" aria-labelledby="sos-ja">
+            <h2 id="sos-ja">緊急時は <a href="tel:119">119</a></h2>
+            <p>急を要する場合は、119番に電話してください。</p>
+          </section>
+        </div>
 
-    <section id="zh">
-      <h2>简体中文</h2>
-      <p>「日本就医助手」帮助您查找日本的医院、诊所、牙科和药店，并标注接收外国患者医疗机构名单中的语言信息。</p>
-      <ul>
-        <li><a href="privacy.html#zh">隐私政策</a></li>
-        <li><a href="terms.html#zh">使用条款与医疗免责声明</a></li>
-      </ul>
-    </section>
+        <footer class="colophon">
+          <ul>
+            <li><a href="privacy.html#ja">プライバシーポリシー</a></li>
+            <li><a href="terms.html#ja">利用規約</a></li>
+          </ul>
+          <p>連絡先：<a href="mailto:jpclinicfinder@gmail.com">jpclinicfinder@gmail.com</a></p>
+          <p>開発：<span translate="no">Little Star Studio</span></p>
+        </footer>
+      </div>
+    </article>
 
-    <section id="ja">
-      <h2>日本語</h2>
-      <p>「外国語対応病院マップ」は、日本国内の病院・診療所・歯科・薬局を探すためのアプリです。外国人患者受入医療機関リストの言語情報も表示します。</p>
-      <ul>
-        <li><a href="privacy.html#ja">プライバシーポリシー</a></li>
-        <li><a href="terms.html#ja">利用規約・医療免責事項</a></li>
-      </ul>
-    </section>
+    <article id="zh" lang="zh-Hans" class="locale">
+      <div class="wrap">
+        <div class="hero">
+          <div class="copy">
+            <p class="eyebrow">Android 应用</p>
+            <h1 translate="no">今開いてる病院マップ｜夜間・休日・薬局・多言語</h1>
+            <p class="tagline">在地图上查找正在营业的医院和药店。夜间、节假日和周日也能马上确认附近的机构。可按外语服务筛选。</p>
+            <div class="stores">
+              <a class="badge-link" href="https://play.google.com/store/apps/details?id=com.panwenliang.jphospitalfinder">
+                <img src="assets/google-play-badge-zh.png" width="646" height="250" alt="下载应用，尽在 Google Play" decoding="async">
+              </a>
+              <p class="soon">App Store：即将上线</p>
+            </div>
+          </div>
+          <figure class="phone">
+            <img src="assets/map-illustration.svg" width="260" height="480" alt="应用界面示意图：地图上标有地点" decoding="async">
+            <figcaption>此为示意图，并非实际截图。</figcaption>
+          </figure>
+        </div>
+
+        <h2 class="section-title" id="feat-zh">可以做的事</h2>
+        <ul class="features">
+          <li>
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10" r="2.2" fill="currentColor"/></svg></div>
+            <h3>正在营业的地图</h3>
+            <p>在地图上查找当前正在营业的医院和药店。</p>
+          </li>
+          <li>
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M15.5 3.8a7.2 7.2 0 1 0 5 12.2A6.6 6.6 0 0 1 15.5 3.8z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
+            <h3>夜间 / 节假日 / 周日</h3>
+            <p>夜间、节假日和周日也能确认附近的机构。</p>
+          </li>
+          <li>
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M4 10.2 12 4l8 6.2V20a1 1 0 0 1-1 1h-4.2v-6H9.2V21H5a1 1 0 0 1-1-1v-9.8z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
+            <h3>药店</h3>
+            <p>在地图上查看附近药店是否正在营业。</p>
+          </li>
+          <li>
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="12" r="8.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3.8 12h16.4M12 3.8c2.2 2.4 3.4 5.2 3.4 8.2s-1.2 5.8-3.4 8.2c-2.2-2.4-3.4-5.2-3.4-8.2s1.2-5.8 3.4-8.2z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></div>
+            <h3>外语筛选</h3>
+            <p>按机构标注的外语服务进行筛选。</p>
+          </li>
+          <li>
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><circle cx="11" cy="11" r="6.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M15.8 15.8 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <h3>名称与地址搜索</h3>
+            <p>输入机构名称或地址，从候选中选择。</p>
+          </li>
+          <li>
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><rect x="7" y="3" width="10" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M9.4 12.2 11.2 14l3.6-3.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h3>离线的都道府县数据</h3>
+            <p>将都道府县数据保存在手机上，没有网络也能查询。</p>
+          </li>
+        </ul>
+
+        <div class="notes">
+          <section class="card" aria-labelledby="data-zh">
+            <h2 id="data-zh">关于数据</h2>
+            <p>机构信息由日本厚生劳动省公开的开放数据加工而成，可能与实际情况不同。前往前请电话向机构确认。</p>
+            <p>本应用并非厚生劳动省制作或提供的服务。</p>
+            <p class="credit muted">出处：厚生劳动省「接收外国患者的医疗机构名单」、厚生劳动省「<a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryou/newpage_43373.html">医疗信息网（Navii）</a>」开放数据（<a href="https://www.digital.go.jp/resources/open_data/public_data_license_v1.0">公共数据利用规约 第1.0版</a>），经加工制作。部分位置信息使用了国土地理院的地址检索。</p>
+          </section>
+          <section class="card emergency" aria-labelledby="sos-zh">
+            <h2 id="sos-zh">紧急时请拨打 <a href="tel:119">119</a></h2>
+            <p>如遇紧急情况，请拨打 119。</p>
+          </section>
+        </div>
+
+        <footer class="colophon">
+          <ul>
+            <li><a href="privacy.html#zh">隐私政策</a></li>
+            <li><a href="terms.html#zh">使用条款</a></li>
+          </ul>
+          <p>联系：<a href="mailto:jpclinicfinder@gmail.com">jpclinicfinder@gmail.com</a></p>
+          <p>开发者：<span translate="no">Little Star Studio</span></p>
+        </footer>
+      </div>
+    </article>
+
+    <article id="en" lang="en" class="locale">
+      <div class="wrap">
+        <div class="hero">
+          <div class="copy">
+            <p class="eyebrow">Android app</p>
+            <h1 translate="no">今開いてる病院マップ｜夜間・休日・薬局・多言語</h1>
+            <p class="tagline">Find hospitals and pharmacies that are open now, on a map. Check nearby facilities at night, on holidays, and on Sundays. Filter by foreign-language support.</p>
+            <div class="stores">
+              <a class="badge-link" href="https://play.google.com/store/apps/details?id=com.panwenliang.jphospitalfinder">
+                <img src="assets/google-play-badge-en.png" width="646" height="250" alt="Get it on Google Play" decoding="async">
+              </a>
+              <p class="soon">App Store: coming soon</p>
+            </div>
+          </div>
+          <figure class="phone">
+            <img src="assets/map-illustration.svg" width="260" height="480" alt="Illustration of a map with place pins" decoding="async">
+            <figcaption>Illustration only. Not a product screenshot.</figcaption>
+          </figure>
+        </div>
+
+        <h2 class="section-title" id="feat-en">What you can do</h2>
+        <ul class="features">
+          <li>
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10" r="2.2" fill="currentColor"/></svg></div>
+            <h3>Open-now map</h3>
+            <p>See hospitals and pharmacies that are open right now.</p>
+          </li>
+          <li>
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M15.5 3.8a7.2 7.2 0 1 0 5 12.2A6.6 6.6 0 0 1 15.5 3.8z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
+            <h3>Nights, holidays, and Sundays</h3>
+            <p>Check nearby facilities at night, on holidays, and on Sundays.</p>
+          </li>
+          <li>
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M4 10.2 12 4l8 6.2V20a1 1 0 0 1-1 1h-4.2v-6H9.2V21H5a1 1 0 0 1-1-1v-9.8z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
+            <h3>Pharmacies</h3>
+            <p>See whether nearby pharmacies are open, on the map.</p>
+          </li>
+          <li>
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="12" r="8.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3.8 12h16.4M12 3.8c2.2 2.4 3.4 5.2 3.4 8.2s-1.2 5.8-3.4 8.2c-2.2-2.4-3.4-5.2-3.4-8.2s1.2-5.8 3.4-8.2z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></div>
+            <h3>Foreign-language filter</h3>
+            <p>Narrow the list to places that list foreign-language support.</p>
+          </li>
+          <li>
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><circle cx="11" cy="11" r="6.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M15.8 15.8 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            <h3>Name and address search</h3>
+            <p>Type a facility name or address and choose from suggestions.</p>
+          </li>
+          <li>
+            <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><rect x="7" y="3" width="10" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M9.4 12.2 11.2 14l3.6-3.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <h3>Offline prefectures</h3>
+            <p>Save a prefecture on your phone and search without a connection.</p>
+          </li>
+        </ul>
+
+        <div class="notes">
+          <section class="card" aria-labelledby="data-en">
+            <h2 id="data-en">About the data</h2>
+            <p>Facility details are processed from public open data published by Japan's Ministry of Health, Labour and Welfare. They may differ from current conditions. Confirm with the facility by phone before you visit.</p>
+            <p>This app is not produced or provided by the Ministry of Health, Labour and Welfare.</p>
+            <p class="credit muted">Source: Ministry of Health, Labour and Welfare, “List of medical institutions accepting foreign patients” and “<a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iryou/newpage_43373.html">Iryou Joho Net (Navii)</a>” open data, processed under the <a href="https://www.digital.go.jp/resources/open_data/public_data_license_v1.0">Public Data License v1.0</a>. Some locations use the Geospatial Information Authority of Japan address search.</p>
+          </section>
+          <section class="card emergency" aria-labelledby="sos-en">
+            <h2 id="sos-en">In an emergency, call <a href="tel:119">119</a></h2>
+            <p>If you need emergency help, call 119.</p>
+          </section>
+        </div>
+
+        <footer class="colophon">
+          <ul>
+            <li><a href="privacy.html#en">Privacy policy</a></li>
+            <li><a href="terms.html#en">Terms</a></li>
+          </ul>
+          <p>Contact: <a href="mailto:jpclinicfinder@gmail.com">jpclinicfinder@gmail.com</a></p>
+          <p>Developer: <span translate="no">Little Star Studio</span></p>
+        </footer>
+      </div>
+    </article>
   </main>
-
-  <footer>
-    <p>Not an official Ministry of Health, Labour and Welfare service.</p>
-    <p>Contact: <a href="mailto:jpclinicfinder@gmail.com">jpclinicfinder@gmail.com</a></p>
-  </footer>
+  <script>
+    (function () {
+      var map = { ja: "ja", zh: "zh-Hans", en: "en" };
+      var links = document.querySelectorAll(".langs a");
+      function apply() {
+        var key = (location.hash || "").replace("#", "");
+        if (!map[key]) key = "ja";
+        document.documentElement.lang = map[key];
+        for (var i = 0; i < links.length; i++) {
+          if (links[i].getAttribute("href") === "#" + key) links[i].setAttribute("aria-current", "true");
+          else links[i].removeAttribute("aria-current");
+        }
+      }
+      window.addEventListener("hashchange", apply);
+      apply();
+    })();
+  </script>
 </body>
 </html>
