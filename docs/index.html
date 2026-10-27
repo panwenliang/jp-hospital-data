@@ -21,15 +21,16 @@
   <meta property="og:title" content="今開いてる病院マップ｜夜間・休日・薬局・多言語">
   <meta property="og:description" content="今開いてる病院・薬局を地図で検索。夜間・休日・日曜も近くの施設をすぐ確認。外国語対応で絞り込み、名称・住所の候補検索、都道府県データのオフライン保存に対応。データは厚生労働省の公開情報です。緊急時は119番。">
   <meta property="og:url" content="https://panwenliang.github.io/jp-hospital-data/">
-  <meta property="og:image" content="https://panwenliang.github.io/jp-hospital-data/assets/og.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="今開いてる病院マップ｜夜間・休日・薬局・多言語">
+  <meta property="og:image" content="https://panwenliang.github.io/jp-hospital-data/assets/screenshots/01-map.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="506">
+  <meta property="og:image:height" content="900">
+  <meta property="og:image:alt" content="今開いてる病院マップの地図画面">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="今開いてる病院マップ｜夜間・休日・薬局・多言語">
   <meta name="twitter:description" content="今開いてる病院・薬局を地図で検索。夜間・休日・日曜も近くの施設をすぐ確認。外国語対応で絞り込み。緊急時は119番。">
-  <meta name="twitter:image" content="https://panwenliang.github.io/jp-hospital-data/assets/og.png">
-  <meta name="twitter:image:alt" content="今開いてる病院マップ｜夜間・休日・薬局・多言語">
+  <meta name="twitter:image" content="https://panwenliang.github.io/jp-hospital-data/assets/screenshots/01-map.png">
+  <meta name="twitter:image:alt" content="今開いてる病院マップの地図画面">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="landing.css">
   <script type="application/ld+json">
@@ -39,7 +40,7 @@
     "name": "今開いてる病院マップ｜夜間・休日・薬局・多言語",
     "description": "今開いてる病院・薬局を地図で検索。夜間・休日・日曜も近くの施設をすぐ確認。外国語対応で絞り込み、名称・住所の候補検索、都道府県データのオフライン保存に対応。",
     "url": "https://panwenliang.github.io/jp-hospital-data/",
-    "image": "https://panwenliang.github.io/jp-hospital-data/assets/og.png",
+    "image": "https://panwenliang.github.io/jp-hospital-data/assets/screenshots/01-map.png",
     "installUrl": "https://play.google.com/store/apps/details?id=com.panwenliang.jphospitalfinder",
     "downloadUrl": "https://play.google.com/store/apps/details?id=com.panwenliang.jphospitalfinder",
     "operatingSystem": "ANDROID",
@@ -104,8 +105,10 @@
             </div>
           </div>
           <figure class="phone">
-            <img src="assets/map-illustration.svg" width="260" height="480" alt="地図上にピンが並ぶアプリ画面のイメージ" decoding="async">
-            <figcaption>図はイメージです。実際の画面とは異なります。</figcaption>
+            <picture>
+              <source srcset="assets/screenshots/01-map.webp" type="image/webp">
+              <img src="assets/screenshots/01-map.png" width="506" height="900" alt="地図画面。いま開いている施設をピンで表示" decoding="async" fetchpriority="high">
+            </picture>
           </figure>
         </div>
 
@@ -142,6 +145,54 @@
             <p>都道府県のデータを端末に保存して、通信がなくても検索できます。</p>
           </li>
         </ul>
+
+        <section class="shots" aria-labelledby="shots-ja">
+          <h2 class="section-title" id="shots-ja">画面</h2>
+          <div class="shot-row" tabindex="0">
+            <figure>
+              <picture>
+                <source srcset="assets/screenshots/01-map.webp" type="image/webp">
+                <img src="assets/screenshots/01-map.png" width="506" height="900" alt="地図でいま開いている施設" loading="lazy" decoding="async">
+              </picture>
+              <figcaption>地図でいま開いている施設</figcaption>
+            </figure>
+            <figure>
+              <picture>
+                <source srcset="assets/screenshots/02-list.webp" type="image/webp">
+                <img src="assets/screenshots/02-list.png" width="506" height="900" alt="いま開いている一覧" loading="lazy" decoding="async">
+              </picture>
+              <figcaption>いま開いている一覧</figcaption>
+            </figure>
+            <figure>
+              <picture>
+                <source srcset="assets/screenshots/03-filters.webp" type="image/webp">
+                <img src="assets/screenshots/03-filters.png" width="506" height="900" alt="言語と時間で絞り込み" loading="lazy" decoding="async">
+              </picture>
+              <figcaption>言語と時間で絞り込み</figcaption>
+            </figure>
+            <figure>
+              <picture>
+                <source srcset="assets/screenshots/04-detail.webp" type="image/webp">
+                <img src="assets/screenshots/04-detail.png" width="506" height="900" alt="電話番号と道順" loading="lazy" decoding="async">
+              </picture>
+              <figcaption>電話番号と道順</figcaption>
+            </figure>
+            <figure>
+              <picture>
+                <source srcset="assets/screenshots/06-phrases.webp" type="image/webp">
+                <img src="assets/screenshots/06-phrases.png" width="506" height="900" alt="受付で見せるフレーズ" loading="lazy" decoding="async">
+              </picture>
+              <figcaption>受付で見せるフレーズ</figcaption>
+            </figure>
+            <figure>
+              <picture>
+                <source srcset="assets/screenshots/08-offline.webp" type="image/webp">
+                <img src="assets/screenshots/08-offline.png" width="506" height="900" alt="都道府県データを保存" loading="lazy" decoding="async">
+              </picture>
+              <figcaption>都道府県データを保存</figcaption>
+            </figure>
+          </div>
+        </section>
 
         <div class="notes">
           <section class="card" aria-labelledby="data-ja">
@@ -182,8 +233,10 @@
             </div>
           </div>
           <figure class="phone">
-            <img src="assets/map-illustration.svg" width="260" height="480" alt="应用界面示意图：地图上标有地点" decoding="async">
-            <figcaption>此为示意图，并非实际截图。</figcaption>
+            <picture>
+              <source srcset="assets/screenshots/01-map.webp" type="image/webp">
+              <img src="assets/screenshots/01-map.png" width="506" height="900" alt="地图界面，用标记显示正在营业的机构" decoding="async">
+            </picture>
           </figure>
         </div>
 
@@ -220,6 +273,54 @@
             <p>将都道府县数据保存在手机上，没有网络也能查询。</p>
           </li>
         </ul>
+
+        <section class="shots" aria-labelledby="shots-zh">
+          <h2 class="section-title" id="shots-zh">界面</h2>
+          <div class="shot-row" tabindex="0">
+            <figure>
+              <picture>
+                <source srcset="assets/screenshots/01-map.webp" type="image/webp">
+                <img src="assets/screenshots/01-map.png" width="506" height="900" alt="地图上正在营业的机构" loading="lazy" decoding="async">
+              </picture>
+              <figcaption>地图上正在营业的机构</figcaption>
+            </figure>
+            <figure>
+              <picture>
+                <source srcset="assets/screenshots/02-list.webp" type="image/webp">
+                <img src="assets/screenshots/02-list.png" width="506" height="900" alt="正在营业的列表" loading="lazy" decoding="async">
+              </picture>
+              <figcaption>正在营业的列表</figcaption>
+            </figure>
+            <figure>
+              <picture>
+                <source srcset="assets/screenshots/03-filters.webp" type="image/webp">
+                <img src="assets/screenshots/03-filters.png" width="506" height="900" alt="按语言和时间筛选" loading="lazy" decoding="async">
+              </picture>
+              <figcaption>按语言和时间筛选</figcaption>
+            </figure>
+            <figure>
+              <picture>
+                <source srcset="assets/screenshots/04-detail.webp" type="image/webp">
+                <img src="assets/screenshots/04-detail.png" width="506" height="900" alt="电话号码和路线" loading="lazy" decoding="async">
+              </picture>
+              <figcaption>电话号码和路线</figcaption>
+            </figure>
+            <figure>
+              <picture>
+                <source srcset="assets/screenshots/06-phrases.webp" type="image/webp">
+                <img src="assets/screenshots/06-phrases.png" width="506" height="900" alt="在窗口出示的短句" loading="lazy" decoding="async">
+              </picture>
+              <figcaption>在窗口出示的短句</figcaption>
+            </figure>
+            <figure>
+              <picture>
+                <source srcset="assets/screenshots/08-offline.webp" type="image/webp">
+                <img src="assets/screenshots/08-offline.png" width="506" height="900" alt="保存都道府县数据" loading="lazy" decoding="async">
+              </picture>
+              <figcaption>保存都道府县数据</figcaption>
+            </figure>
+          </div>
+        </section>
 
         <div class="notes">
           <section class="card" aria-labelledby="data-zh">
@@ -260,8 +361,10 @@
             </div>
           </div>
           <figure class="phone">
-            <img src="assets/map-illustration.svg" width="260" height="480" alt="Illustration of a map with place pins" decoding="async">
-            <figcaption>Illustration only. Not a product screenshot.</figcaption>
+            <picture>
+              <source srcset="assets/screenshots/01-map.webp" type="image/webp">
+              <img src="assets/screenshots/01-map.png" width="506" height="900" alt="Map screen with pins for places that are open" decoding="async">
+            </picture>
           </figure>
         </div>
 
@@ -298,6 +401,54 @@
             <p>Save a prefecture on your phone and search without a connection.</p>
           </li>
         </ul>
+
+        <section class="shots" aria-labelledby="shots-en">
+          <h2 class="section-title" id="shots-en">Screens</h2>
+          <div class="shot-row" tabindex="0">
+            <figure>
+              <picture>
+                <source srcset="assets/screenshots/01-map.webp" type="image/webp">
+                <img src="assets/screenshots/01-map.png" width="506" height="900" alt="Places open now, on the map" loading="lazy" decoding="async">
+              </picture>
+              <figcaption>Places open now, on the map</figcaption>
+            </figure>
+            <figure>
+              <picture>
+                <source srcset="assets/screenshots/02-list.webp" type="image/webp">
+                <img src="assets/screenshots/02-list.png" width="506" height="900" alt="Open-now list" loading="lazy" decoding="async">
+              </picture>
+              <figcaption>Open-now list</figcaption>
+            </figure>
+            <figure>
+              <picture>
+                <source srcset="assets/screenshots/03-filters.webp" type="image/webp">
+                <img src="assets/screenshots/03-filters.png" width="506" height="900" alt="Filter by language and hours" loading="lazy" decoding="async">
+              </picture>
+              <figcaption>Filter by language and hours</figcaption>
+            </figure>
+            <figure>
+              <picture>
+                <source srcset="assets/screenshots/04-detail.webp" type="image/webp">
+                <img src="assets/screenshots/04-detail.png" width="506" height="900" alt="Phone number and directions" loading="lazy" decoding="async">
+              </picture>
+              <figcaption>Phone number and directions</figcaption>
+            </figure>
+            <figure>
+              <picture>
+                <source srcset="assets/screenshots/06-phrases.webp" type="image/webp">
+                <img src="assets/screenshots/06-phrases.png" width="506" height="900" alt="Short lines to show at reception" loading="lazy" decoding="async">
+              </picture>
+              <figcaption>Short lines to show at reception</figcaption>
+            </figure>
+            <figure>
+              <picture>
+                <source srcset="assets/screenshots/08-offline.webp" type="image/webp">
+                <img src="assets/screenshots/08-offline.png" width="506" height="900" alt="Prefecture data saved on the phone" loading="lazy" decoding="async">
+              </picture>
+              <figcaption>Prefecture data saved on the phone</figcaption>
+            </figure>
+          </div>
+        </section>
 
         <div class="notes">
           <section class="card" aria-labelledby="data-en">
